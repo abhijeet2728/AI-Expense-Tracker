@@ -1,86 +1,44 @@
 import type { Metadata } from "next";
 import GoogleSignInButton from "@/components/SignIn";
 
-/* ─── SVG icons (inline, no extra deps) ────────────────────── */
+/* ── SVG Icons ─────────────────────────────────────────────── */
 
 const SpendWiseIcon = () => (
-  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-    <rect width="36" height="36" rx="10" fill="#FF6B2B" />
-    <path
-      d="M18 8C12.477 8 8 12.477 8 18s4.477 10 10 10 10-4.477 10-10S23.523 8 18 8z"
-      fill="white"
-      fillOpacity="0.2"
-    />
-    <path
-      d="M18 11v2M18 23v2M13 18h-2M25 18h-2"
-      stroke="white"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-    />
-    <circle cx="18" cy="18" r="4" fill="white" />
-    <path
-      d="M18 15.5v1.2l-1.2 1.3 1.2 1.3v1.2"
-      stroke="#FF6B2B"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const BrainIcon = () => (
-  <svg width="54" height="54" viewBox="0 0 56 56" fill="none" aria-hidden="true">
-    <circle cx="28" cy="28" r="28" fill="white" fillOpacity="0.1" />
-    <path d="M22 20c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="white" strokeWidth="2" strokeLinecap="round" />
-    <path
-      d="M16 26c0-2.21 1.79-4 4-4h16c2.21 0 4 1.79 4 4v6c0 4.418-3.582 8-8 8h-8c-4.418 0-8-3.582-8-8v-6z"
-      stroke="white"
-      strokeWidth="2"
-    />
-    <path d="M22 28h12M22 32h8" stroke="white" strokeWidth="2" strokeLinecap="round" />
-    <circle cx="20" cy="26" r="2" fill="white" fillOpacity="0.55" />
-    <circle cx="36" cy="26" r="2" fill="white" fillOpacity="0.55" />
+  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+    <rect width="38" height="38" rx="11" fill="#f97316" />
+    <circle cx="19" cy="19" r="9" stroke="white" strokeWidth="1.8" strokeOpacity="0.4" />
+    <path d="M19 13v1.5M19 23.5V25M14 19h-1.5M25.5 19H24" stroke="white" strokeWidth="1.8" strokeLinecap="round" />
+    <circle cx="19" cy="19" r="3.5" fill="white" />
+    <path d="M19 16.8v1l-1 1.2 1 1.2v1" stroke="#f97316" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 const ChartIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-    <path d="M3 15l5-5 4 3 7-8" stroke="#FF6B2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M15 5h4v4" stroke="#FF6B2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <path d="M3 14l4-4 3 3 6-7" stroke="#f97316" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M13 6h4v4" stroke="#f97316" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 const ShieldIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-    <path
-      d="M11 2L4 5v5c0 4.418 2.985 8.556 7 10 4.015-1.444 7-5.582 7-10V5L11 2z"
-      stroke="#FF6B2B"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-    <path d="M8 11l2 2 4-4" stroke="#FF6B2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <path d="M10 2L3 5v4c0 4 2.7 7.7 7 9 4.3-1.3 7-5 7-9V5L10 2z" stroke="#f97316" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M7 10l2 2 4-4" stroke="#f97316" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
-const SparkleIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-    <path d="M11 2v4M11 16v4M2 11h4M16 11h4" stroke="#FF6B2B" strokeWidth="2" strokeLinecap="round" />
-    <path
-      d="M4.929 4.929l2.828 2.828M14.243 14.243l2.828 2.828M4.929 17.071l2.828-2.828M14.243 7.757l2.828-2.828"
-      stroke="#FF6B2B"
-      strokeWidth="2"
-      strokeLinecap="round"
-    />
-    <circle cx="11" cy="11" r="2.5" fill="#FF6B2B" />
+const SparkIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+    <path d="M10 2v3M10 15v3M2 10h3M15 10h3" stroke="#f97316" strokeWidth="1.8" strokeLinecap="round" />
+    <circle cx="10" cy="10" r="3" fill="#f97316" />
   </svg>
 );
 
-/* ─── Static data ───────────────────────────────────────────── */
+/* ── Static data ───────────────────────────────────────────── */
 
 const features = [
   {
-    icon: <SparkleIcon />,
+    icon: <SparkIcon />,
     title: "AI-Powered Insights",
     desc: "Smart categorization and spending predictions powered by machine learning.",
   },
@@ -92,132 +50,141 @@ const features = [
   {
     icon: <ShieldIcon />,
     title: "Bank-Level Security",
-    desc: "256-bit encryption and zero-knowledge architecture keeps your data safe.",
+    desc: "256-bit encryption keeps your financial data safe.",
   },
 ];
 
 const stats = [
-  { value: "2.4M+", label: "Transactions analyzed" },
+  { value: "2.4M+", label: "Transactions" },
   { value: "₹840Cr", label: "Savings found" },
-  { value: "98%", label: "Accuracy rate" },
+  { value: "98%", label: "Accuracy" },
 ];
 
-/* ─── Metadata ──────────────────────────────────────────────── */
+/* ── Metadata ──────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
   title: "Sign In — SpendWise AI",
   description: "AI-powered expense tracking and financial insights.",
 };
 
-/* ─── Page (Server Component) ───────────────────────────────── */
+/* ── Page ──────────────────────────────────────────────────── */
 
 export default function LoginPage() {
   return (
-    <div className="login-root">
+    <div className="min-h-screen flex font-sans bg-orange-50">
 
-      {/* ── LEFT PANEL ──────────────────────────────────────── */}
-      <aside className="login-left" aria-label="Product overview">
-        {/* Decorative blobs */}
-        <div className="left-blob left-blob-1" aria-hidden="true" />
-        <div className="left-blob left-blob-2" aria-hidden="true" />
-        <div className="left-blob left-blob-3" aria-hidden="true" />
+      {/* ── LEFT PANEL ───────────────────────────────────────── */}
+      <aside className="hidden lg:flex flex-[1.1] flex-col justify-between px-14 py-12 relative overflow-hidden bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600">
+
+        {/* Blobs */}
+        <div className="absolute w-96 h-96 rounded-full bg-white/[0.07] -top-28 -right-24 pointer-events-none" />
+        <div className="absolute w-72 h-72 rounded-full bg-white/[0.05] -bottom-16 -left-20 pointer-events-none" />
+        <div className="absolute w-44 h-44 rounded-full bg-white/[0.08] bottom-52 right-16 pointer-events-none" />
 
         {/* Brand */}
-        <div className="left-brand">
+        <div className="relative z-10 flex items-center gap-3">
           <SpendWiseIcon />
           <div>
-            <div className="left-brand-name">SpendWise AI</div>
-            <div className="left-brand-tagline">Expense Intelligence</div>
+            <p className="text-white font-bold text-lg leading-tight">SpendWise AI</p>
+            <p className="text-white/60 text-[11px] uppercase tracking-widest mt-0.5">Expense Intelligence</p>
           </div>
         </div>
 
-        {/* Hero copy */}
-        <div className="left-hero">
-          <div className="left-hero-icon">
-            <BrainIcon />
-          </div>
-          <h1 className="left-heading">
+        {/* Hero */}
+        <div className="relative z-10">
+          <h1 className="text-white font-bold text-4xl leading-tight mb-4">
             Your money,<br />
-            <span>finally</span> understood.
+            <span className="text-white/80">finally</span> understood.
           </h1>
-          <p className="left-subtext">
-            AI that learns your spending habits, flags unusual charges, and
-            tells you exactly where to cut back — automatically.
+          <p className="text-white/70 text-[15px] leading-relaxed max-w-sm">
+            AI that learns your spending habits, flags unusual charges, and tells you
+            exactly where to cut back — automatically.
           </p>
         </div>
 
-        {/* Features */}
-        <div className="left-features">
+        {/* Feature cards */}
+        <div className="relative z-10 flex flex-col gap-2.5">
           {features.map((f) => (
-            <div className="feature-card" key={f.title}>
-              <div className="feature-icon-box">{f.icon}</div>
+            <div
+              key={f.title}
+              className="flex items-start gap-3.5 bg-white/10 border border-white/20 rounded-2xl px-4 py-3.5 transition-colors hover:bg-white/[0.16]"
+            >
+              <div className="w-9 h-9 rounded-xl bg-white/90 flex items-center justify-center shrink-0">
+                {f.icon}
+              </div>
               <div>
-                <div className="feature-title">{f.title}</div>
-                <div className="feature-desc">{f.desc}</div>
+                <p className="text-white text-[13.5px] font-semibold mb-0.5">{f.title}</p>
+                <p className="text-white/65 text-[12.5px] leading-snug">{f.desc}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Stats */}
-        <div className="left-stats">
+        <div className="relative z-10 flex gap-2.5">
           {stats.map((s) => (
-            <div className="stat-pill" key={s.label}>
-              <div className="stat-value">{s.value}</div>
-              <div className="stat-label">{s.label}</div>
+            <div
+              key={s.label}
+              className="flex-1 bg-white/[0.13] border border-white/20 rounded-full py-2.5 text-center"
+            >
+              <p className="text-white font-bold text-[17px] tracking-tight">{s.value}</p>
+              <p className="text-white/60 text-[11px] mt-0.5">{s.label}</p>
             </div>
           ))}
         </div>
       </aside>
 
-      {/* ── RIGHT PANEL ─────────────────────────────────────── */}
-      <main className="login-right">
-        <div className="auth-card" role="main">
+      {/* ── RIGHT PANEL ──────────────────────────────────────── */}
+      <main className="flex-[0.9] bg-white flex items-center justify-center px-8 py-12">
+        <div className="w-full max-w-sm">
 
-          {/* Card brand */}
-          <div className="auth-card-brand">
-            <SpendWiseIcon />
-            <span className="auth-card-brand-name">SpendWise AI</span>
-          </div>
+          {/* Auth card */}
+          <div className="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-9">
 
-          {/* Heading */}
-          <h2 className="auth-heading">Welcome back</h2>
-          <p className="auth-subtext">
-            Sign in to your account to continue tracking your expenses.
-          </p>
+            {/* Card brand */}
+            <div className="flex items-center gap-2.5 mb-6">
+              <SpendWiseIcon />
+              <span className="font-semibold text-gray-900 text-base">SpendWise AI</span>
+            </div>
 
-          {/* ── Google sign-in (Client Component) ── */}
-          <GoogleSignInButton callbackUrl="/dashboard" />
+            {/* Heading */}
+            <h2 className="text-2xl font-bold text-gray-900 mb-1">Welcome back</h2>
+            <p className="text-sm text-gray-500 mb-7 leading-relaxed">
+              Sign in to continue tracking your expenses with AI.
+            </p>
 
-          {/* Divider */}
-          <div className="auth-divider">
-            <div className="auth-divider-line" />
-            <span className="auth-divider-text">Secure sign-in via Google OAuth</span>
-            <div className="auth-divider-line" />
-          </div>
+            {/* Google button — client component */}
+            <GoogleSignInButton callbackUrl="/dashboard" />
 
-          {/* Trust badges */}
-          <div className="trust-row">
-            <span className="trust-badge">
-              <span className="trust-dot" aria-hidden="true" />
-              256-bit SSL
-            </span>
-            <span className="trust-badge">
-              <span className="trust-dot" aria-hidden="true" />
-              SOC 2 certified
-            </span>
-            <span className="trust-badge">
-              <span className="trust-dot" aria-hidden="true" />
-              No card required
-            </span>
+            {/* Divider */}
+            <div className="flex items-center gap-3 my-5">
+              <div className="flex-1 h-px bg-gray-100" />
+              <span className="text-[11.5px] text-gray-400 whitespace-nowrap">
+                Secure sign-in via Google OAuth
+              </span>
+              <div className="flex-1 h-px bg-gray-100" />
+            </div>
+
+            {/* Trust badges */}
+            <div className="flex justify-center gap-4 flex-wrap">
+              {["256-bit SSL", "SOC 2 certified", "No card required"].map((t) => (
+                <span key={t} className="flex items-center gap-1.5 text-[11.5px] text-gray-400">
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-500 inline-block" aria-hidden="true" />
+                  {t}
+                </span>
+              ))}
+            </div>
+
           </div>
 
           {/* Legal */}
-          <p className="auth-legal">
+          <p className="text-center text-[11.5px] text-gray-400 mt-5 leading-relaxed">
             By signing in you agree to our{" "}
-            <a href="/terms">Terms of Service</a> and{" "}
-            <a href="/privacy">Privacy Policy</a>.
+            <a href="/terms" className="text-orange-500 hover:underline font-medium">Terms</a>
+            {" "}and{" "}
+            <a href="/privacy" className="text-orange-500 hover:underline font-medium">Privacy Policy</a>.
           </p>
+
         </div>
       </main>
 
