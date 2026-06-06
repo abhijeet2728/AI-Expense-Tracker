@@ -49,8 +49,8 @@ const features = [
   },
   {
     icon: <ShieldIcon />,
-    title: "Bank-Level Security",
-    desc: "256-bit encryption keeps your financial data safe.",
+    title: "Smart Financial Insights",
+    desc: "Receive helpful recommendations and spending trends tailored to your habits, so you can make better money decisions.",
   },
 ];
 
